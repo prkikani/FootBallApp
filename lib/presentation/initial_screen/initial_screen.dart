@@ -14,6 +14,9 @@ class InitialScreen extends StatelessWidget {
               image: DecorationImage(
                 image: AssetImage("assets/images/mainBg.png"),
                 fit: BoxFit.cover,
+
+
+                
               ),
             ),
             child: null,
