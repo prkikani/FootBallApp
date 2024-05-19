@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:footballapp/presentation/secondScreen/second_screen.dart';
-import 'package:footballapp/presentation/thirdscreen/third_screen.dart';
 
-class InitialScreen extends StatelessWidget {
-  const InitialScreen({super.key});
+class SecondScreen extends StatelessWidget {
+  const SecondScreen({super.key});
 
   static Route<void> route() {
-    return MaterialPageRoute<void>(builder: (_) => const InitialScreen());
+    return MaterialPageRoute<void>(builder: (_) => const SecondScreen());
   }
 
   @override
@@ -26,7 +23,8 @@ class InitialScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             IconButton(
-              icon: Image.asset('assets/images/iconFootballPlayNow.png'),
+              icon: Image.asset(
+                  'assets/images/iconBtnCricketFootballPlayNowBG.png'),
               iconSize: MediaQuery.of(context).size.height / 30,
               onPressed: () {},
             ),
@@ -37,29 +35,17 @@ class InitialScreen extends StatelessWidget {
               children: [
                 IconButton(
                   icon: Image.asset(
-                    'assets/images/imgBtnStart.png',
+                    'assets/images/imgBtnFootballTV.png',
                     height: 70,
                   ),
                   onPressed: () {},
                 ),
                 IconButton(
                   icon: Image.asset(
-                    'assets/images/iconBtnRate.png',
+                    'assets/images/imgBtnCricketTV.png',
                     height: 70,
                   ),
                   onPressed: () {},
-                ),
-                IconButton(
-                  icon: Image.asset(
-                    'assets/images/iconBtnPlayGame.png',
-                    height: 70,
-                  ),
-                  onPressed: () {
-                    Navigator.push<void>(
-                      context,
-                      ThirdScreen.route(),
-                    );
-                  },
                 ),
               ],
             ),

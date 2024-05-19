@@ -32,8 +32,6 @@ dependencies:
     sdk: flutter
   flutter_launcher_icons:
   connectivity_plus:
-  flutter_bloc:
-  equatable:
   cached_network_image:
 
   cupertino_icons: ^1.0.6

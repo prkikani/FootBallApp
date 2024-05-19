@@ -1,14 +1,9 @@
-import 'package:equatable/equatable.dart';
-
-class InitialModel extends Equatable {
+class InitialModel {
   InitialModel();
 
   InitialModel copyWith() {
     return InitialModel();
   }
-
-  @override
-  List<Object?> get preps => [];
 
   @override
   dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
